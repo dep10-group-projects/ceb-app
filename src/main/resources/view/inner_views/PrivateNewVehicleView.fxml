@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="416.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.inner_views.PrivateNewVehicleViewController">
+    <children>
+        <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackOnAction" text="Back" />
+        <Label layoutX="498.0" layoutY="18.0" text="Logged In User: 323434" />
+        <Label layoutX="210.0" layoutY="38.0" text="New Private Vehicle Information">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <VBox layoutX="39.0" layoutY="92.0" spacing="10.0">
+            <children>
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Vehicle type:" textAlignment="RIGHT" />
+                        <TextField fx:id="txtVehicleType" prefHeight="24.0" prefWidth="208.0" promptText="Type or Select the type" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Registration Number:" textAlignment="RIGHT" />
+                        <TextField fx:id="txtRegistrationNumber" prefHeight="24.0" prefWidth="208.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Contractor name:" textAlignment="RIGHT" />
+                        <TextField fx:id="txtEngineNumber" prefHeight="24.0" prefWidth="208.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Chassis Number:" textAlignment="RIGHT" />
+                        <TextField fx:id="txtChassisNumber" prefHeight="24.0" prefWidth="208.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Assigned Person:" textAlignment="RIGHT" />
+                        <TextField fx:id="txtLocation" prefHeight="24.0" prefWidth="208.0" promptText="Type or Select the Person" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="160.0" text="Assigned Date:" textAlignment="RIGHT" />
+                        <DatePicker fx:id="dtpkrAssignedDate" prefHeight="24.0" prefWidth="205.0" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="77.0" prefWidth="368.0" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="158.0" text="Comments:" textAlignment="RIGHT" />
+                        <TextArea fx:id="txtComments" prefHeight="77.0" prefWidth="201.0" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <ComboBox fx:id="cmbType" layoutX="423.0" layoutY="92.0" prefHeight="24.0" prefWidth="188.0" promptText="Select Vehicle Type" />
+        <ComboBox fx:id="cmbPerson" layoutX="423.0" layoutY="229.0" prefHeight="24.0" prefWidth="188.0" promptText="Select the Person" />
+        <Button fx:id="btnSave" layoutX="423.0" layoutY="349.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="24.0" prefWidth="188.0" text="Save" />
+        <Button fx:id="btnClear" layoutX="423.0" layoutY="310.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="24.0" prefWidth="188.0" text="Clear" />
+    </children>
+</AnchorPane>

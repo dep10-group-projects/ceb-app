@@ -7,26 +7,25 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import javafx.stage.Window;
 
 import java.io.IOException;
 
-public class AdminRegisterController {
+public class LoginViewController {
 
     @FXML
-    private Button btnSignup;
+    private Button btnLogIn;
 
     @FXML
-    private TextField txtPassword;
+    private TextField btnPassword;
 
     @FXML
     private TextField txtPfNumber;
 
     @FXML
-    void btnSignupOnAction(ActionEvent event){
-        Stage stage = (Stage)btnSignup.getScene().getWindow();
+    void btnLoginOnAction(ActionEvent event) {
+        Stage stage = (Stage) btnLogIn.getScene().getWindow();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/LoginView.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/VehicleSelectionView.fxml"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.dep10.app.controller.AdminRegisterController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="220.0" prefWidth="416.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.AdminRegisterController">
+   <children>
+      <Label layoutX="124.0" layoutY="28.0" text="Admin Sign up">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="88.0" prefHeight="16.0" prefWidth="100.0" text="PF number" />
+      <Label layoutX="37.0" layoutY="130.0" text="New Password" />
+      <TextField fx:id="txtPfNumber" layoutX="159.0" layoutY="84.0" />
+      <TextField fx:id="txtPassword" layoutX="159.0" layoutY="126.0" />
+      <Button fx:id="btnSignup" layoutX="159.0" layoutY="176.0" mnemonicParsing="false" onAction="#btnSignupOnAction" text="Sign up" />
+   </children>
 </AnchorPane>

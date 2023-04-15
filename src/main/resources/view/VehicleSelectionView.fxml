@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="295.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.VehicleSelectionViewController">
+   <children>
+      <Label fx:id="lblLoggedIn" layoutX="431.0" layoutY="23.0" text="Logged In: 4493943" />
+      <Label layoutX="187.0" layoutY="82.0" text="Select a Vehicle Type">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBack" layoutX="31.0" layoutY="27.0" mnemonicParsing="false" onAction="#btnBackOnAction" text="Back" />
+      <Button fx:id="btnCebVehicles" layoutX="95.0" layoutY="137.0" mnemonicParsing="false" onAction="#btnCebVehiclesOnAction" prefHeight="35.0" prefWidth="394.0" text="CEB Vehicles" />
+      <Button fx:id="btnPrivateVehicles" layoutX="95.0" layoutY="194.0" mnemonicParsing="false" onAction="#btnPrivateVehiclesOnAction" prefHeight="35.0" prefWidth="394.0" text="Private Vehicles" />
+   </children>
+</AnchorPane>
