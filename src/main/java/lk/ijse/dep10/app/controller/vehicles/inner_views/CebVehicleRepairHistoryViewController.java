@@ -10,10 +10,17 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import lk.ijse.dep10.app.db.DBConnection;
 import lk.ijse.dep10.app.model.CebVehicleRepair;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 
 public class CebVehicleRepairHistoryViewController {
 
@@ -60,9 +67,7 @@ public class CebVehicleRepairHistoryViewController {
     private TextField txtSlipNumber;
 
     public void initialize(){
-        String[] locations = {"Area Office","Baddegama CSC", "Wanduraba CSC", "Gonapinuwala CSC",
-                "Thalgaswala CSC", "Udumaga CSC", "AMU"};
-        cmbLocation.getItems().addAll(locations);
+
     }
 
     @FXML
