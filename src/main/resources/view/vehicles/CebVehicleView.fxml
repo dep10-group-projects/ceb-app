@@ -23,9 +23,9 @@
             <TableColumn prefWidth="179.0" text="Vehicle Type" />
         </columns>
       </TableView>
-      <Button fx:id="btnRepairHistory" layoutX="98.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnRepairHistoryOnAction" prefHeight="24.0" prefWidth="236.0" text="Repair History" textAlignment="CENTER" />
-      <Button fx:id="btnAddNewVehicle" layoutX="381.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnAddNewVehicleOnAction" prefHeight="24.0" prefWidth="236.0" text="+ Add New Vehicle" />
-      <Button fx:id="btnExtraVehicleInfo" layoutX="381.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnExtraVehicleInfoOnAction" prefHeight="24.0" prefWidth="236.0" text="Extra Vehicle Information" />
-      <Button fx:id="btnAssignmentHistory" layoutX="98.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnAssignmentHistoryOnAction" prefHeight="24.0" prefWidth="236.0" text="Assignment History" />
+      <Button fx:id="btnRepairHistory" layoutX="47.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnRepairHistoryOnAction" prefHeight="33.0" prefWidth="287.0" text="Repair History &amp; Change Assignment" textAlignment="CENTER" />
+      <Button fx:id="btnAddNewVehicle" layoutX="363.0" layoutY="311.0" mnemonicParsing="false" onAction="#btnAddNewVehicleOnAction" prefHeight="33.0" prefWidth="287.0" text="+ Add New Vehicle" />
+      <Button fx:id="btnExtraVehicleInfo" layoutX="363.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnExtraVehicleInfoOnAction" prefHeight="33.0" prefWidth="287.0" text="Extra Vehicle Information" />
+      <Button fx:id="btnAssignmentHistory" layoutX="47.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnAssignmentHistoryOnAction" prefHeight="33.0" prefWidth="287.0" text="Assignment History" />
    </children>
 </AnchorPane>
