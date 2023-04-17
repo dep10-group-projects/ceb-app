@@ -9,6 +9,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import lk.ijse.dep10.app.controller.vehicles.CebVehicleViewController;
 import lk.ijse.dep10.app.db.DBConnection;
 import lk.ijse.dep10.app.model.CebAssignments;
 
@@ -75,6 +76,7 @@ public class CebAssignmentHistoryViewController {
     }
     @FXML
     void btnBackOnAction(ActionEvent event) {
+        CebVehicleViewController.getCebVehicles().clear();
         Stage stage = (Stage) btnBack.getScene().getWindow();
         try {
             Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/CebVehicleView.fxml")));

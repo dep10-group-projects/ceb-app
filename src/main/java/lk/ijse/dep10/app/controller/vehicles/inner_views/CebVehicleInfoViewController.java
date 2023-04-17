@@ -43,6 +43,7 @@ public class CebVehicleInfoViewController {
     }
     @FXML
     void btnBackOnAction(ActionEvent event) {
+        CebVehicleViewController.getCebVehicles().clear();
         Stage stage = (Stage) btnBack.getScene().getWindow();
         try {
             Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/CebVehicleView.fxml")));

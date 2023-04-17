@@ -46,9 +46,9 @@ public class CebVehicleViewController {
         tblVehicles.getColumns().get(1).setCellValueFactory(new PropertyValueFactory<>("currentLocation"));
         tblVehicles.getColumns().get(2).setCellValueFactory(new PropertyValueFactory<>("type"));
 
-        if(cebVehicles.size() == 0){
-            loadVehicles();
-        }
+
+        loadVehicles();
+
 
         System.out.println(cebVehicles);
 
@@ -73,15 +73,17 @@ public class CebVehicleViewController {
                 String comments = resultSet.getString("comments");
                 preparedStatement.setString(1, registrationNumber);
                 ResultSet rst1 = preparedStatement.executeQuery();
-                rst1.next();
-                String location = rst1.getString("location");
-                String chassisNumber = rst1.getString("chassis_number");
-                String engineNumber = rst1.getString("engine_number");
-                int manufacturedYear = rst1.getInt("manufacture_year");
-                CebVehicle vehicle = new CebVehicle(registrationNumber, location, type, chassisNumber, engineNumber,
-                        manufacturedYear, comments );
-                System.out.println(vehicle);
-                cebVehicles.add(vehicle);
+                while (rst1.next()) {
+                    String location = rst1.getString("location");
+                    String chassisNumber = rst1.getString("chassis_number");
+                    String engineNumber = rst1.getString("engine_number");
+                    int manufacturedYear = rst1.getInt("manufacture_year");
+                    CebVehicle vehicle = new CebVehicle(registrationNumber, location, type, chassisNumber, engineNumber,
+                            manufacturedYear, comments );
+                    System.out.println(vehicle);
+                    cebVehicles.add(vehicle);
+                }
+
             }
 
         } catch (SQLException e) {
