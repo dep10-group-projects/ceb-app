@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="441.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.inner_views.CebNewVehicleViewController">
+<AnchorPane prefHeight="441.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.vehicles.inner_views.CebNewVehicleViewController">
    <children>
       <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBackOnAction" text="Back" />
       <Label layoutX="498.0" layoutY="18.0" text="Logged In User: 323434" />

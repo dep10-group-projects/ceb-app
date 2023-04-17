@@ -1,7 +1,6 @@
 package lk.ijse.dep10.app;
 
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -26,7 +25,7 @@ public class AppInitializer extends Application {
     public void start(Stage primaryStage) throws IOException {
         generateTables();
         boolean adminExists = adminExists();
-        String url = adminExists ? "/view/LoginView.fxml": "/view/SignUpView.fxml";
+        String url = adminExists ? "/view/vehicles/LoginView.fxml" : "/view/vehicles/SignUpView.fxml";
         primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource(url))));
 //        primaryStage.setResizable(false);
         primaryStage.setTitle(adminExists ? "Login": "Create Admin Account");
@@ -48,8 +47,10 @@ public class AppInitializer extends Application {
         try {
             Connection connection = DBConnection.getInstance().getConnection();
             Statement stm = connection.createStatement();
-            ResultSet rst = stm.executeQuery("SHOW TABLES");
-            if (!rst.next()){
+//            ResultSet rst = stm.executeQuery("SHOW TABLES");
+
+            if (true){
+                System.out.println("Generating tables");
                 InputStream is = getClass().getResourceAsStream("/schema.sql");
                 BufferedReader br = new BufferedReader(new InputStreamReader(is));
                 String line;

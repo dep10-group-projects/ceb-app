@@ -1,4 +1,4 @@
-package lk.ijse.dep10.app.controller;
+package lk.ijse.dep10.app.controller.vehicles;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -25,7 +25,7 @@ public class LoginViewController {
     void btnLoginOnAction(ActionEvent event) {
         Stage stage = (Stage) btnLogIn.getScene().getWindow();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/VehicleSelectionView.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/VehicleSelectionView.fxml"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="295.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.VehicleSelectionViewController">
+<AnchorPane prefHeight="295.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep10.app.controller.vehicles.VehicleSelectionViewController">
    <children>
       <Label fx:id="lblLoggedIn" layoutX="431.0" layoutY="23.0" text="Logged In: 4493943" />
       <Label layoutX="187.0" layoutY="82.0" text="Select a Vehicle Type">

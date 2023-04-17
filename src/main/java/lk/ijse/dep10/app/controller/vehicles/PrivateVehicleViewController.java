@@ -1,4 +1,4 @@
-package lk.ijse.dep10.app.controller;
+package lk.ijse.dep10.app.controller.vehicles;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -39,7 +39,7 @@ public class PrivateVehicleViewController {
     void btnAddNewVehicleOnAction(ActionEvent event) {
         Stage stage = (Stage) btnBack.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/inner_views/PrivateNewVehicleView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/PrivateNewVehicleView.fxml")));
             stage.setScene(scene);
             stage.centerOnScreen();
         } catch (IOException e) {
@@ -51,7 +51,7 @@ public class PrivateVehicleViewController {
     void btnAssignmentHistoryOnAction(ActionEvent event) {
         Stage stage = (Stage) btnBack.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/inner_views/PrivateAssignmentHistory.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/PrivateAssignmentHistory.fxml")));
             stage.setScene(scene);
             stage.centerOnScreen();
         } catch (IOException e) {
@@ -63,7 +63,7 @@ public class PrivateVehicleViewController {
     void btnBackOnAction(ActionEvent event) {
         Stage stage = (Stage) btnBack.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/VehicleSelectionView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/VehicleSelectionView.fxml")));
             stage.setScene(scene);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -74,7 +74,7 @@ public class PrivateVehicleViewController {
     void btnExtraVehicleInfoOnAction(ActionEvent event) {
         Stage stage = (Stage) btnBack.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/inner_views/PrivateVehicleInfoView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/PrivateVehicleInfoView.fxml")));
             stage.setScene(scene);
             stage.centerOnScreen();
         } catch (IOException e) {
@@ -86,7 +86,7 @@ public class PrivateVehicleViewController {
     void btnPaymentHistoryOnAction(ActionEvent event) {
         Stage stage = (Stage) btnBack.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/inner_views/PrivateVehiclePaymentHistoryView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/PrivateVehiclePaymentHistoryView.fxml")));
             stage.setScene(scene);
             stage.centerOnScreen();
         } catch (IOException e) {

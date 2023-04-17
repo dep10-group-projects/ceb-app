@@ -1,5 +1,10 @@
+DROP TABLE User,
+    Ceb_Assignment_History, Ceb_Vehicle_Info, Repair_History,
+    Private_Vehicle_Info, Payment_History, Private_Assignment_History;
+
 CREATE TABLE IF NOT EXISTS User(
     pf_number INT PRIMARY KEY ,
+    password VARCHAR(15) NOT NULL ,
     role ENUM('ADMIN', 'USER') NOT NULL
 );
 
@@ -65,4 +70,27 @@ CREATE TABLE IF NOT EXISTS Payment_History(
      FOREIGN KEY (reg_num) REFERENCES Private_Vehicle_Info(private_registration_number)
 );
 
+# mock data
+INSERT INTO User (pf_number, password, role)
+VALUES
+(265165, 'iamadmin', 'ADMIN'),
+(22222,'amauser' , 'USER');
 
+INSERT INTO Ceb_Vehicle_Info (ceb_registration_number, location, type, chassis_number, engine_number, manufacture_year, comments)
+VALUES
+('BCM-2234', 'Area Office', 'Van', '338924983498', '383948394',2003, 'none' ),
+('BCM-1111', 'Baddegama CSC', 'Van', '338924983498', '383948394',2004, 'Kabalak gaththe' );
+
+INSERT INTO Ceb_Assignment_History (reg_num, assigned_location, vehicle_type, assigned_date, comments)
+VALUES
+('BCM-2234','Area Office', 'Van', DATE('2023-03-27'), 'none'),
+('BCM-1111', 'Baddegama CSC' , 'Van' , DATE('2023-03-27'), 'first assignment');
+
+INSERT INTO Repair_History ( reg_num, repair_date, description, cost, payment_slip_no)
+VALUES
+('BCM-2234', DATE('2023-03-27') ,'something related to the engine', 33435, '4345345234423' ),
+('BCM-2234',DATE('2023-03-27'),'something related to the engine', 33435, '4345345234423' ),
+('BCM-1111',DATE('2023-03-27'),'something related to the engine', 33435, '4345345234423' ),
+('BCM-1111',DATE('2023-03-27'),'something related to the engine', 33435, '4345345234423' ),
+('BCM-2234',DATE('2023-03-27'),'something related to the engine', 33435, '4345345234423' ),
+('BCM-2234',DATE('2023-03-27'),'something related to the engine', 33435, '4345345234423' );

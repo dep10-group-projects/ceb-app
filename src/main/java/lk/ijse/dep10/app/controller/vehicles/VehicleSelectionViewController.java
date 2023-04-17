@@ -1,4 +1,4 @@
-package lk.ijse.dep10.app.controller;
+package lk.ijse.dep10.app.controller.vehicles;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -33,7 +33,7 @@ public class VehicleSelectionViewController {
     void btnCebVehiclesOnAction(ActionEvent event) {
         Stage stage = (Stage) btnCebVehicles.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/CebVehicleView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/CebVehicleView.fxml")));
             stage.setScene(scene);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -44,7 +44,7 @@ public class VehicleSelectionViewController {
     void btnPrivateVehiclesOnAction(ActionEvent event) {
         Stage stage = (Stage) btnCebVehicles.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/PrivateVehicleView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/PrivateVehicleView.fxml")));
             stage.setScene(scene);
         } catch (IOException e) {
             throw new RuntimeException(e);

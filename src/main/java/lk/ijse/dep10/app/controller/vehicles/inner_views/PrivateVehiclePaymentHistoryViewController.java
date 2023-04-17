@@ -1,4 +1,4 @@
-package lk.ijse.dep10.app.controller.inner_views;
+package lk.ijse.dep10.app.controller.vehicles.inner_views;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -72,7 +72,7 @@ public class PrivateVehiclePaymentHistoryViewController {
     void btnBackOnAction(ActionEvent event) {
         Stage stage = (Stage) btnBack.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/PrivateVehicleView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/PrivateVehicleView.fxml")));
             stage.setScene(scene);
             stage.centerOnScreen();
         } catch (IOException e) {

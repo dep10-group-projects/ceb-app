@@ -1,4 +1,4 @@
-package lk.ijse.dep10.app.controller;
+package lk.ijse.dep10.app.controller.vehicles;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -39,7 +39,7 @@ public class CebVehicleViewController {
     void btnAddNewVehicleOnAction(ActionEvent event) {
         Stage stage = (Stage) btnAddNewVehicle.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/inner_views/CebNewVehicleView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/CebNewVehicleView.fxml")));
             stage.setScene(scene);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -50,7 +50,7 @@ public class CebVehicleViewController {
     void btnAssignmentHistoryOnAction(ActionEvent event) {
         Stage stage = (Stage) btnAssignmentHistory.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/inner_views/CebAssignmentHistoryView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/CebAssignmentHistoryView.fxml")));
             stage.setScene(scene);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -61,7 +61,7 @@ public class CebVehicleViewController {
     void btnBackOnAction(ActionEvent event) {
         Stage stage = (Stage) btnBack.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/VehicleSelectionView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/VehicleSelectionView.fxml")));
             stage.setScene(scene);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -72,7 +72,7 @@ public class CebVehicleViewController {
     void btnExtraVehicleInfoOnAction(ActionEvent event) {
         Stage stage = (Stage) btnExtraVehicleInfo.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/inner_views/CebVehicleInfoView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/CebVehicleInfoView.fxml")));
             stage.setScene(scene);
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -83,7 +83,7 @@ public class CebVehicleViewController {
     void btnRepairHistoryOnAction(ActionEvent event) {
         Stage stage = (Stage) btnRepairHistory.getScene().getWindow();
         try {
-            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/inner_views/CebVehicleRepairHistoryView.fxml")));
+            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/CebVehicleRepairHistoryView.fxml")));
             stage.setScene(scene);
         } catch (IOException e) {
             throw new RuntimeException(e);
