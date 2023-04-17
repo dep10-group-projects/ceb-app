@@ -28,7 +28,8 @@ public class AppInitializer extends Application {
         String url = adminExists ? "/view/vehicles/LoginView.fxml" : "/view/vehicles/SignUpView.fxml";
         primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource(url))));
 //        primaryStage.setResizable(false);
-        primaryStage.setTitle(adminExists ? "Login": "Create Admin Account");
+//        primaryStage.setTitle(adminExists ? "Login": "Create Admin Account");
+        primaryStage.setTitle("CEB-Vehicle Management System");
         primaryStage.show();
         primaryStage.centerOnScreen();
     }

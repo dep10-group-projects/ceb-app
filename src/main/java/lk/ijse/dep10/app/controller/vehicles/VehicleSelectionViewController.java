@@ -35,6 +35,7 @@ public class VehicleSelectionViewController {
         try {
             Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/CebVehicleView.fxml")));
             stage.setScene(scene);
+            stage.centerOnScreen();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

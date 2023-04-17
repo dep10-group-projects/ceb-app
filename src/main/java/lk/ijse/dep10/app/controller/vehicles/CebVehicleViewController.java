@@ -41,6 +41,7 @@ public class CebVehicleViewController {
         try {
             Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/CebNewVehicleView.fxml")));
             stage.setScene(scene);
+            stage.centerOnScreen();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -52,6 +53,7 @@ public class CebVehicleViewController {
         try {
             Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/CebAssignmentHistoryView.fxml")));
             stage.setScene(scene);
+            stage.centerOnScreen();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -63,6 +65,7 @@ public class CebVehicleViewController {
         try {
             Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/VehicleSelectionView.fxml")));
             stage.setScene(scene);
+            stage.centerOnScreen();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -74,6 +77,7 @@ public class CebVehicleViewController {
         try {
             Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/CebVehicleInfoView.fxml")));
             stage.setScene(scene);
+            stage.centerOnScreen();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -85,6 +89,7 @@ public class CebVehicleViewController {
         try {
             Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/inner_views/CebVehicleRepairHistoryView.fxml")));
             stage.setScene(scene);
+            stage.centerOnScreen();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

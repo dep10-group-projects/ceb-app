@@ -26,6 +26,7 @@ public class LoginViewController {
         Stage stage = (Stage) btnLogIn.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/VehicleSelectionView.fxml"))));
+            stage.centerOnScreen();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

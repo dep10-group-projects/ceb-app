@@ -26,6 +26,7 @@ public class AdminRegisterController {
         Stage stage = (Stage)btnSignup.getScene().getWindow();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/LoginView.fxml"))));
+            stage.centerOnScreen();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
