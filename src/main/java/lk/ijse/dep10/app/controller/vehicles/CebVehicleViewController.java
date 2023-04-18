@@ -54,6 +54,23 @@ public class CebVehicleViewController {
 
         tblVehicles.getItems().addAll(cebVehicles);
 
+        btnRepairHistory.setDisable(true);
+        tblVehicles.getSelectionModel().selectedItemProperty().addListener((val,prev,cur)->{
+            if(cur != null){
+                btnRepairHistory.setDisable(false);
+                String regNumber = cur.getRegistrationNumber();
+                System.setProperty("REG_NUM", regNumber);
+                System.setProperty("CHAS_NUM", cur.getChassisNumber());
+                System.setProperty("ENG_NUM", cur.getEngineNumber());
+                System.setProperty("TYPE", cur.getType());
+                System.setProperty("MAN_YEAR", cur.getManufacturedYear()+"");
+            }else{
+                btnRepairHistory.setDisable(true);
+            }
+        });
+
+        tblVehicles.setStyle("-fx-background-color: transparent;");
+
     }
 
     public static ArrayList<CebVehicle> getCebVehicles() {

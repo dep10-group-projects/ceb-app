@@ -31,6 +31,7 @@ public class VehicleSelectionViewController {
 
     @FXML
     void btnCebVehiclesOnAction(ActionEvent event) {
+        CebVehicleViewController.getCebVehicles().clear();
         Stage stage = (Stage) btnCebVehicles.getScene().getWindow();
         try {
             Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/vehicles/CebVehicleView.fxml")));
